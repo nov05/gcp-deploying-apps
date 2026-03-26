@@ -21,8 +21,8 @@ spec:
       containers:
       - name: devops-demo
         # image: # <YOUR IMAGE PATH HERE>
-        # image: us-east4-docker.pkg.dev/qwiklabs-gcp-03-fb1f931381f5/devops-demo/devops-image:v0.2
-        image: us-east4-docker.pkg.dev/qwiklabs-gcp-03-fb1f931381f5/devops-demo/devops-image:latest
+        image: us-east4-docker.pkg.dev/qwiklabs-gcp-01-4c781bfff05d/devops-demo/devops-image:v0.2
+        # image: us-east4-docker.pkg.dev/qwiklabs-gcp-03-fb1f931381f5/devops-demo/devops-image:latest
         ports:
         - containerPort: 8080
 
