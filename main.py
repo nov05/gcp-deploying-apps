@@ -5,8 +5,10 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     model = {
-        # "title": "Hello, Kubernetes Engine!", 
-        "title": "Hello, Cloud Run!", 
+        # "title": "Hello, GCP!", 
+        # "title": "Hello, App Engine!", 
+        "title": "Hello, Kubernetes Engine!", 
+        # "title": "Hello, Cloud Run!", 
         "text": "Welcome to this demo running on Google Cloud's Kubernetes Engine."
     }
     return render_template('index.html', model=model)
