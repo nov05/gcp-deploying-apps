@@ -22,7 +22,7 @@ spec:
       - name: devops-demo
         # Update your image path here
         # image: us-east4-docker.pkg.dev/qwiklabs-gcp-01-4c781bfff05d/devops-demo/devops-image:v0.2
-        image: ${ALLOWED_REGION}-docker.pkg.dev/${DEVSHELL_PROJECT_ID}/devops-demo/devops-image:v0.2
+        image: ${ALLOWED_REGION}-docker.pkg.dev/{DEVSHELL_PROJECT_ID}/devops-demo/devops-image:v0.2
         ports:
         - containerPort: 8080
 
