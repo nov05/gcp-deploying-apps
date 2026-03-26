@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    model = {"title": "Hello, App Engine!"}
+    model = {"title": "Hello, Kubernetes Engine!"}
     return render_template('index.html', model=model)
 
 if __name__ == "__main__":
