@@ -1,3 +1,21 @@
+## Created by nov 05 on 2026-03-26
+## Run the following commands before deploying the app
+## by running "kubectl apply -f kubernetes-config.yaml".
+#
+# export PROJECT_ID=$DEVSHELL_PROJECT_ID
+# # Enable the orgpolicy API non-interactively
+# yes | gcloud services enable orgpolicy.googleapis.com --project=$PROJECT_ID --quiet
+#
+# # Detect allowed region dynamically
+# export ALLOWED_REGION=$(gcloud org-policies describe constraints/gcp.resourceLocations \
+#   --project=$PROJECT_ID \
+#   --flatten="spec.rules[].values.allowedValues[]" \
+#   --format="value(spec.rules.values.allowedValues)" \
+#   | grep -oP '(?<=in:)(us|europe)[a-z0-9-]+(?=-locations)' \
+#   | head -n1
+# )
+#
+# envsubst < kubernetes-config-template.yaml > kubernetes-config.yaml
 ---
 apiVersion: apps/v1
 kind: Deployment
