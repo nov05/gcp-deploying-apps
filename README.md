@@ -1,4 +1,4 @@
-# 🟢 Google Skill Lab - **Deploying Apps to Google Cloud**
+# 🟢 Google Skill Lab - **Deploying Apps to Google Cloud**   
 
 In this demo, we will deploy applications to the Google Cloud services App Engine, Kubernetes Engine, and Cloud Run.
 
