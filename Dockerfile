@@ -1,5 +1,5 @@
-# FROM python:3.13
-FROM python:3.11-slim
+FROM python:3.13-slim
+# FROM python:3.11-slim
 # Prevent Python from writing .pyc files and buffering stdout
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
