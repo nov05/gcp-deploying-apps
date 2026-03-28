@@ -1,6 +1,5 @@
 ## google-cloud-profiler==4.1.0 is not compatible with python:3.13 or python:3.11-slim
-# FROM python:3.13
-FROM python:3.11
+FROM python:3.13.12
 # Prevent Python from writing .pyc files and buffering stdout
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
