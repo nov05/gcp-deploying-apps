@@ -1,6 +1,6 @@
 ## Created by nov 05 on 2026-03-26
-## Run the following commands before deploying the app
-## by running "kubectl apply -f kubernetes-config.yaml".
+## Run the following commands to generate "kubernetes-config.yaml" 
+## before deploying the app by running "kubectl apply -f kubernetes-config.yaml".
 #
 # export PROJECT_ID=$DEVSHELL_PROJECT_ID
 # # Enable the orgpolicy API non-interactively
